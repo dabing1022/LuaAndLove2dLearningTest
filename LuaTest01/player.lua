@@ -7,6 +7,7 @@ player.damage = 2
 
 player.pic = love.graphics.newImage("wife.png")
 
+-- pull request
 function player_draw()
 	love.graphics.setColor(255, 0, 0)
 	love.graphics.draw(player.pic, player.x, player.y)
