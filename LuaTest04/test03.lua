@@ -24,3 +24,14 @@ print(co)
 print(type(co))
 coroutine.resume(co)
 print(coroutine.status(co))
+
+
+--Save table
+t = {"1","2","3","4"}
+hWrite = io.open("dabingSaveTableTest.txt", "w")
+hWrite.write(textutils.serialize(t))
+hWrite.close()
+--Load the table
+hRead = io.open("dabingSaveTableTest.txt", "r")
+t = textutils.unserialize(hRead.readLine())
+hRead.close()

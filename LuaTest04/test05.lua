@@ -78,3 +78,28 @@ print(tab.x, tab.z)
 setDefault(tab, 0)
 print(tab.x, tab.z)
 
+
+function table.removeItem(list, item, removeAll)
+    local rmCount = 0
+    for i = 1, #list do
+        if list[i - rmCount] == item then
+            table.remove(list, i - rmCount)
+            if removeAll then
+                rmCount = rmCount + 1
+            else
+                break
+            end
+        end
+    end
+end
+
+local aryTable = {10, 20, 30, 40, 50, 40, 40}
+table.removeItem(aryTable, 40, true)
+for i, v in ipairs(aryTable) do
+    print(v)
+end
+
+for i = 1, 50 do 
+    print(math.random())
+end
+

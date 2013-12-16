@@ -13,3 +13,9 @@ end
 
 local t={1,2,34,5,33}
 print(#t)
+
+
+local aaa = {1,2,3}
+local bbb = aaa
+aaa = nil
+print(bbb)
