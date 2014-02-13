@@ -39,3 +39,6 @@ print("--------------test args")
 local z = {5, 6}
 local args = {5, 6}
 print(#args)
+
+local mm = {["a"] = 1, ["b"] = 2}
+print(mm)
