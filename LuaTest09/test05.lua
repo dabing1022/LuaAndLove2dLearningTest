@@ -22,3 +22,9 @@ end
 print(3/6)
 print(math.floor(3 / 6))
 print(math.ceil(3 / 6))
+
+H = {}
+tableTest = {m = 1}
+setmetatable(tableTest, H)
+H.__index = { a = 2}
+print(tableTest.a)
