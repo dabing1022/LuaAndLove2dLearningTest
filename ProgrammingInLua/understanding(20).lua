@@ -20,9 +20,11 @@ print(name4)	-- ABC
 local name5 = "childhood"
 local name6 = string.sub(name5, 1, 3)
 local name7 = string.sub(name5, 3, -1)
+local name7_1 = string.sub(name5, 3, -6)
 local name8 = string.sub(name5, 3)
 print(name6)	-- chi
 print(name7)	-- ildhood
+print(name7_1)  -- il
 print(name8)	-- ildhood
 
 local name9 = "[childhood]"
