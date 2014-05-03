@@ -167,3 +167,5 @@ print(a, b, c, quotedPart)
 
 s = "hello Lua!"
 print(string.gsub(s, "(%a)", "%1-%1"))	-- h-he-el-ll-lo-o L-Lu-ua-a!	8
+
+print(string.sub("shibing1", 1, -2))
