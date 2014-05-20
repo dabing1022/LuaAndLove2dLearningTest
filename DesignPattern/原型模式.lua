@@ -10,7 +10,7 @@ function Prototype:new(o)
 end
 
 function Prototype:Clone()
-	return self
+	return self:new()
 end
 
 proto = Prototype:new()
@@ -20,4 +20,8 @@ proto.val = 10
 cloneproto = proto:Clone()
 
 print("输出:"..cloneproto.val)
+
+cloneproto.val = 20
+
+print("proto val is " .. proto.val)
 

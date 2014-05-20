@@ -27,10 +27,10 @@ Shirt = Decorator:new()
 
 
 function Shirt:Show()
-	print("最后衬衫")
 	if self.component ~= nil then
 		self.component:Show()
 	end
+	print("先穿衬衫")
 end
 
 
@@ -38,19 +38,19 @@ end
 Trouser = Decorator:new()
 
 function Trouser:Show()
-	print("然后裤子")
 	if self.component ~= nil then
 		self.component:Show()
 	end
+	print("然后裤子")
 end
 
 Shoe = Decorator:new()
 
 function Shoe:Show()
-	print("先穿鞋子")
 	if self.component ~= nil then
 		self.component:Show()
 	end
+	print("最后穿鞋子")
 end
 
 person = Person:new()
